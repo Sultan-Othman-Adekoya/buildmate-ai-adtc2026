@@ -45,6 +45,7 @@ Peak RAM
 Offline
 
 100%
+
 Demo
 
-Include a GIF.
+.
