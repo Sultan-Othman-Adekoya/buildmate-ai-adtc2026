@@ -1,6 +1,4 @@
 {
-  "schema_version": "1.1.0",
-  "profiler_version": "adtc-profiler 0.1.0",
   "submission": {
     "team_id": "buildmate-ai",
     "domain": "corporate_enterprise",
@@ -40,7 +38,7 @@
   "environment": {
     "measured_on": "participant_laptop",
     "cpu_model": "Intel64 Family 6 Model 78 Stepping 3, GenuineIntel",
-    "ram_gb": 15.9,
+    "ram_gb": 7.9,
     "gpu": "none",
     "os": "Windows-10-10.0.21996-SP0"
   },
