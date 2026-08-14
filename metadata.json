@@ -1,0 +1,49 @@
+{
+  
+  "team_id": "buildmate-ai",
+
+  "domain": "corporate_enterprise",
+
+  "language_scope": [
+    "en"
+  ],
+
+  "african_alpha_claim": true,
+
+  "budget_laptop_claim": true,
+
+  "submitter": {
+    "name": "Sultan-Othman Adekoya",
+    "email": "tobysultanothman@yahoo.com",
+    "github_handle": "Sultan-Othman-Adekoya"
+  },
+
+  "cross_disciplinary_pairing": {
+    "discipline": "civil_engineering",
+    "load_bearing": true,
+    "description": "BuildMate AI combines civil engineering inspection workflows with offline AI and computer vision capabilities to assist engineers and infrastructure inspectors."
+  },
+
+  "test_prompts": [
+    {
+      "prompt_id": "inspection_report",
+      "prompt": "Inspect this construction site observation and produce a concise professional engineering inspection report identifying the defect, likely cause, severity, recommended corrective action, and priority."
+    },
+    {
+      "prompt_id": "site_safety",
+      "prompt": "Analyze this construction site observation and identify the main safety or quality risks, explain why they matter, and recommend practical corrective actions for the site team."
+    }
+  ],
+
+  "model": {
+    "name": "Phi-3 Mini 4K Instruct",
+    "runtime": "llama.cpp",
+    "quantization": "Q4_K_M",
+    "parameters_estimate": "3.8B",
+    "packaging": "binary_bundle"
+  },
+
+  "_runtime": {
+    "model_path": "model/Phi-3-mini-4k-instruct-q4.gguf"
+  }
+}
