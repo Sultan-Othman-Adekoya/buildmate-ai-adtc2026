@@ -1,0 +1,85 @@
+{
+  "schema_version": "1.1.0",
+  "profiler_version": "adtc-profiler 0.1.0",
+  "submission": {
+    "team_id": "buildmate-ai",
+    "domain": "corporate_enterprise",
+    "language_scope": [
+      "en"
+    ],
+    "african_alpha_claim": true,
+    "budget_laptop_claim": true,
+    "submitter": {
+      "name": "Sultan-Othman Adekoya",
+      "email": "tobysultanothman@yahoo.com",
+      "github_handle": "Sultan-Othman-Adekoya"
+    },
+    "cross_disciplinary_pairing": {
+      "discipline": "civil_engineering",
+      "load_bearing": true,
+      "description": "BuildMate AI combines civil engineering inspection workflows with offline AI and computer vision capabilities to assist engineers and infrastructure inspectors."
+    },
+    "test_prompts": [
+      {
+        "prompt_id": "inspection_report",
+        "prompt": "Inspect this construction site observation and produce a concise professional engineering inspection report identifying the defect, likely cause, severity, recommended corrective action, and priority."
+      },
+      {
+        "prompt_id": "site_safety",
+        "prompt": "Analyze this construction site observation and identify the main safety or quality risks, explain why they matter, and recommend practical corrective actions for the site team."
+      }
+    ],
+    "model": {
+      "name": "Phi-3 Mini 4K Instruct",
+      "runtime": "llama.cpp",
+      "quantization": "Q4",
+      "parameters_estimate": "3.8B",
+      "packaging": "binary_bundle"
+    }
+  },
+  "environment": {
+    "measured_on": "participant_laptop",
+    "cpu_model": "Intel64 Family 6 Model 78 Stepping 3, GenuineIntel",
+    "ram_gb": 15.9,
+    "gpu": "none",
+    "os": "Windows-10-10.0.21996-SP0"
+  },
+  "throughput": {
+    "tokens_per_second_generation": 5.1,
+    "first_token_latency_ms": 53953.97,
+    "prompt_tokens": 512,
+    "generated_tokens": 128
+  },
+  "memory": {
+    "peak_rss_mb": 3796.18,
+    "steady_state_rss_mb": 3544.53,
+    "peak_vms_mb": 1596.78
+  },
+  "accuracy": [
+    {
+      "benchmark": "arc_easy",
+      "dataset_version": "lm-eval-harness",
+      "language": "en",
+      "samples": 50,
+      "score": 0.76,
+      "metric": "acc_norm"
+    }
+  ],
+  "cpu_thermal": {
+    "cpu_percent_p99": 99.2,
+    "core_temp_c_peak": null,
+    "throttled": false
+  },
+  "reproducibility": {
+    "git_commit_sha": "f20e4c4309ee",
+    "docker_image_digest": "unknown",
+    "random_seed": 42
+  },
+  "model_info": {
+    "params_count": 3821079552,
+    "context_length": 4096,
+    "architecture": "phi3",
+    "claimed_params_estimate": "3.8B",
+    "params_match": true
+  }
+}
